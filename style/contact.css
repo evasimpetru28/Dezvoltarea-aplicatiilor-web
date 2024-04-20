@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    list-style: none;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #FFF9F0;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 80px 0;
+    background: url('/images/header2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+header h1 {
+    margin-bottom: 50px;
+    font-size: 3em;
+    color: #FF6F61;
+}
+
+nav ul {
+    padding: 10px;
+    background-color: #FFD3B4;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5F4B8B;
+    padding: 10px 20px;
+    font-size: 25px;
+    transition: background-color 0.5s ease;
+    background-color: #FFD3B4;
+    border-radius: 30px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #FFB482;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Hero image section */
+.hero-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px; /* Increase border radius for a softer look */
+    margin-bottom: 30px; /* Increase margin for more space */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Owner info section */
+
+.owner-info {
+    /* Existing styles... */
+    position: relative; /* For absolute positioning of the image */
+    text-align: center;
+}
+
+.owner-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 3px solid #ffa07a; /* Light salmon border to match the social media buttons */
+    margin-bottom: 20px; /* Space between the image and the text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.owner-photo:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply shadow for depth */
+}
+
+.owner-info {
+    background-color: #fff0f5; /* Lavender blush for a softer box */
+    padding: 30px; /* Increase padding for a more spacious feel */
+    border-radius: 15px; /* Soften the border radius */
+    margin-bottom: 30px; /* Increase margin for more space */
+    text-align: center; /* Center the text for a more balanced look */
+}
+
+.owner-info h2 {
+    color: #ff69b4; /* Lighter pink for the section title */
+    margin-bottom: 15px; /* Increase margin for more space */
+    font-family: 'Helvetica Neue', sans-serif; /* Elegant font */
+}
+
+.owner-info p {
+    font-size: 1.2em;
+    margin-bottom: 15px; /* Increase margin for more space */
+    color: #555; /* Soften the text color */
+}
+
+/* Social media links */
+.social-media {
+    display: flex;
+    justify-content: center; /* Center the social media buttons */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 20px; /* Add space above the social media links */
+}
+
+.social-media a {
+    text-decoration: none;
+    padding: 10px 15px; /* Increase padding for larger buttons */
+    background-color: #ffafd7; /* Soft pink for social media buttons */
+    color: #fff;
+    border-radius: 30px; /* Rounded buttons for a playful look */
+    transition: transform 0.3s, background-color 0.3s; /* Add transform to transition for a pop effect */
+}
+
+.social-media a:hover {
+    background-color: #ff87b2; /* Darker pink on hover */
+    transform: translateY(-3px); /* Move up on hover for a pop effect */
+}
+
+/* Contact form section */
+.contact-form {
+    background-color: #f0f8ff; /* Alice blue for a lighter form background */
+    padding: 30px; /* Increase padding for a more spacious feel */
+    border-radius: 15px; /* Soften the border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    margin-top: 30px; /* Add space above the form */
+}
+
+.contact-form h2 {
+    color: #9a32cd; /* Medium slate blue for the section title */
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #9a32cd;
+    font-size: 1.1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(206, 121, 232, 0.41);
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ba55d3;
+    box-shadow: 0 0 0 2px rgba(186, 85, 211, 0.2);
+}
+
+.contact-form input[type="submit"] {
+    font-weight: 700;
+    padding: 15px;
+    background-color: #ba55d3;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #9a32cd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFD3B4;
+    color: #5F4B8B;
+}
+
+@media (max-width: 768px) {
+    .social-media a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Crochet Corner</title>
+    <link rel="stylesheet" href="../style/contact.css">
+</head>
+<body>
+
+<header>
+    <h1>Crochet Corner</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="yarn-info.html">Yarn Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="owner-info">
+        <img src="../images/owner-photo.jpeg" alt="Eva-Maria Simpetru" class="owner-photo">
+        <h2>About the Owner</h2>
+        <p>Hello! I'm Eva-Maria Simpetru, the passionate crocheter behind Crochet Corner. I've been crocheting for almost a year and love to share my creations with the world. Follow me on my crochet adventures!</p>
+
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://pinterest.com" target="_blank">Pinterest</a>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Crochet Corner. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

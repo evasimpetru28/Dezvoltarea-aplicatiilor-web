@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Corner - Your One-Stop Crochet Shop</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+
+<header>
+    <h1>Crochet Corner</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="yarn-info.html">Yarn Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="products" class="section-container">
+        <h2>Our Products</h2>
+        <p>Discover our wide range of crochet products, from beginner kits to advanced patterns.</p>
+        <div class="product-list">
+            <!-- Example of a product card -->
+            <div class="product-card">
+                <img src="../images/crochet-set.jpg" alt="Crochet Hooks Set">
+                <h3>Beginner Crochet Kit</h3>
+                <p>This kit includes everything you need to start your crochet journey.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="../images/luxury-yarn.jpg" alt="Luxury Yarn">
+                <h3>Wool Yarn</h3>
+                <p>Warm and cozy, perfect for winter projects.</p>
+            </div>
+            <!-- More product cards would go here -->
+
+            <a href="products.html" class="view-all-products-button">
+                <span class="button-icon">🛒</span>View All Products
+            </a>
+        </div>
+    </section>
+
+    <section id="yarn-info" class="section-container">
+        <h2>Yarn Information</h2>
+        <p>Learn about the different sizes and types of yarn to choose the perfect match for your project.</p>
+        <div class="yarn-info">
+            <a href="yarn-info.html" class="view-yarn-info-button">
+                <span class="button-icon">🧵</span>Find Out More
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Crochet Corner. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

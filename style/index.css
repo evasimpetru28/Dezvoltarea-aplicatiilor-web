@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    list-style: none;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #FFF9F0;
+    color: #333;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    padding: 80px 0;
+    background: url('/images/header2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+header h1 {
+    margin-bottom: 50px;
+    font-size: 3em;
+    color: #FF6F61;
+}
+
+nav ul {
+    padding: 10px;
+    background-color: #FFD3B4;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5F4B8B;
+    padding: 10px 20px;
+    font-size: 25px;
+    transition: background-color 0.5s ease;
+    background-color: #FFD3B4;
+    border-radius: 30px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #FFB482;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-container {
+    margin-bottom: 40px;
+}
+
+.section-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ff69b4; /* Playful pink color for headers */
+}
+
+.section-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* General styles for all cards */
+.product-card {
+    width: 30%;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.product-card h3 {
+    padding: 15px;
+    background-color: #fafad2; /* Light goldenrod yellow for title background */
+    margin: 0;
+}
+
+.product-card p {
+    padding: 15px;
+}
+
+/* Hover effects for cards */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card layout */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.view-all-products-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 15px 30px;
+    background-color: #ff69b4; /* Playful pink color to match headers */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners for a playful look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.button-icon {
+    margin-right: 10px;
+    font-size: 1.2em; /* Adjust size as needed */
+}
+
+.view-all-products-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+.yarn-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.view-yarn-info-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 15px 30px;
+    background-color: #ff69b4; /* Playful pink color to match headers */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners for a playful look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.view-yarn-info-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Contact form section */
+.contact-form {
+    background-color: #f0f8ff; /* Alice blue for a lighter form background */
+    padding: 30px; /* Increase padding for a more spacious feel */
+    border-radius: 15px; /* Soften the border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    margin-top: 30px; /* Add space above the form */
+}
+
+.contact-form h2 {
+    color: #9a32cd; /* Medium slate blue for the section title */
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #9a32cd;
+    font-size: 1.1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(206, 121, 232, 0.41);
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ba55d3;
+    box-shadow: 0 0 0 2px rgba(186, 85, 211, 0.2);
+}
+
+.contact-form input[type="submit"] {
+    font-weight: 700;
+    padding: 15px;
+    background-color: #ba55d3;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #9a32cd;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFD3B4;
+    color: #5F4B8B;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
